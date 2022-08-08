@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "sass -w sass/main.sass/ css/main.css"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "sass": "^1.54.3"
+  }
+}
