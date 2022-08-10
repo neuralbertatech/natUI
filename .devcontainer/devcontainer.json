@@ -19,7 +19,10 @@
 				"dbaeumer.vscode-eslint",
 				"syler.sass-indented",
 				"ritwickdey.LiveServer"
-			]
+			],
+			"settings": {
+				"editor.tabSize": 2
+			}
 		}
 	},
 
