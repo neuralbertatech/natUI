@@ -18,7 +18,8 @@
 			"extensions": [
 				"dbaeumer.vscode-eslint",
 				"syler.sass-indented",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				"formulahendry.auto-rename-tag"
 			],
 			"settings": {
 				"editor.tabSize": 2
