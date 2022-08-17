@@ -3,7 +3,7 @@
 
 NeurAlbertaTech's scss framework built on top of bulma.
 
-## Install & Use
+## Install
 To add this to your project, run
 ```bash
 # npm
@@ -11,6 +11,9 @@ npm i @neuralbertatech/
 # yarn
 yarn add @neuralbertatech/ui
 ```
+
+## Documentation
+Since this is built on top of bulma, you can refer to their [documentation](https://bulma.io/documentation/) for most things. You can checkout x for the changes we've made on top.
 
 ## Development
 To run the development environment and start contributing, you'll need to use a [devcontainer](https://containers.dev/). 
