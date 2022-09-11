@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/main.css">
+	<title>natUI | Neuralbertatech's UI library</title>
+	<script>
+		const SUBTITLE_TEXT = 'Neuralbertatech\'s UI library'
+		const EMPTY = ''
+		const UNDERSCORE = '_'
+		const BLINKING_SPEED = 500
+		const TYPING_SPEED = 50
+		const MAX_BLINKS = 2
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const subtitleDOM = document.querySelector('#subtitle')
+			let count = 0
+			const blinking = setInterval(() => {
+				// blink cursor
+				switch (subtitleDOM.textContent) {
+					case UNDERSCORE:
+						subtitleDOM.textContent = EMPTY
+						break
+					default:
+						subtitleDOM.textContent = UNDERSCORE
+						count++
+				}
+				if (count >= MAX_BLINKS) {
+					clearInterval(blinking)
+
+					// type text
+					let typedText = ''
+					for (const i in SUBTITLE_TEXT) {
+						setTimeout(() => {
+							typedText += SUBTITLE_TEXT[i]
+							subtitleDOM.textContent = typedText + UNDERSCORE
+						}, TYPING_SPEED * i)
+					}
+					setTimeout(() => {
+						subtitleDOM.textContent = SUBTITLE_TEXT
+					}, TYPING_SPEED * SUBTITLE_TEXT.length)
+				}
+			}, BLINKING_SPEED)
+		})
+	</script>
+	<style>
+		.landing__card {
+			width: 72ex;
+		}
+
+		.landing__card .subtitle {
+			height: 3rem;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="hero is-fullheight">
+		<div class="hero-body container">
+			<div class="landing__card">
+				<p class="title is-1">natUI</p>
+				<p class="subtitle is-2" id="subtitle">_</p>
+				<div class="field is-grouped">
+					<p class="control">
+						<a class="button is-medium is-white is-outlined" href="https://neuralberta.tech/">Go to main website</a>
+					</p>
+					<p class="control">
+						<a class="button is-medium is-info" href="docs.html">Read docs</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

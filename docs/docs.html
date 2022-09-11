@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>natUI | Documentation</title>
+</head>
+<body>
+  <navbar class="navbar">
+    <div class="navbar-brand">
+      <a href="https://neuralberta.tech/" class="navbar-item">
+        <img src="/img/natLogo.svg" alt="Neuralbertatech logo">
+      </a>
+    </div>
+  </navbar>
+  <main>
+    <div class="container">
+      <h1 class="title is-1">Docs</h1>
+      <section class="section">
+        <h2 class="title is-2">Colours</h2>
+        <span class="tag is-medium is-primary">Purple #7967e1</span>
+        <span class="tag is-medium is-info">Blue #1B9FD6</span>
+        <span class="tag is-medium is-success">Green #24EC94</span>
+        <span class="tag is-medium is-warning">Yellow #ffcd00</span>
+        <span class="tag is-medium is-danger">Red #F72585</span>
+      </section>
+      <section class="section">
+        <h2 class="title is-2">Buttons</h2>
+        <p class="block">
+          Do not use the buttons class without a colour modifier. When using a
+          group of buttons, only make the main button fully coloured and the
+          rest outlined.
+        </p>
+        <div class="buttons">
+          <button class="button is-primary">Primary</button>
+          <button class="button is-link">Link</button>
+          <button class="button is-info">Info</button>
+          <button class="button is-success">Success</button>
+          <button class="button is-warning">Warning</button>
+          <button class="button is-danger">Danger</button>
+        </div>
+        <div class="buttons">
+          <button class="button is-white">White</button>
+          <button class="button is-light">Light</button>
+          <button class="button is-dark">Dark</button>
+          <button class="button is-black">Black</button>
+          <button class="button is-text">Text</button>
+          <button class="button is-ghost">Ghost</button>
+        </div>
+        <h3 class="title is-3">Outlined</h3>
+        <div class="buttons">
+          <button class="button is-outlined is-primary">Primary</button>
+          <button class="button is-outlined is-link">Link</button>
+          <button class="button is-outlined is-info">Info</button>
+          <button class="button is-outlined is-success">Success</button>
+          <button class="button is-outlined is-warning">Warning</button>
+          <button class="button is-outlined is-danger">Danger</button>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="title is-2">Spacing</h2>
+        <p class="block">Use the following helper classes for custom spacing.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Class Name</th>
+              <th>CSS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>w-full</code></td>
+              <td><code>width: 100%;</code></td>
+            </tr>
+            <tr>
+              <td><code>w-screen</code></td>
+              <td><code>width: 100vw;</code></td>
+            </tr>
+            <tr>
+              <td><code>h-full</code></td>
+              <td><code>height: 100%;</code></td>
+            </tr>
+            <tr>
+              <td><code>h-screen</code></td>
+              <td><code>height: 100vh;</code></td>
+            </tr>
+            <tr>
+              <td><code>min-w-full</code></td>
+              <td><code>min-width: 100%;</code></td>
+            </tr>
+            <tr>
+              <td><code>max-w-full</code></td>
+              <td><code>max-width: 100%;</code></td>
+            </tr>
+            <tr>
+              <td><code>min-w-screen</code></td>
+              <td><code>min-width: 100vw;</code></td>
+            </tr>
+            <tr>
+              <td><code>max-w-screen</code></td>
+              <td><code>max-width: 100vw;</code></td>
+            </tr>
+            <tr>
+              <td><code>min-h-full</code></td>
+              <td><code>min-height: 100%;</code></td>
+            </tr>
+            <tr>
+              <td><code>max-h-full</code></td>
+              <td><code>max-height: 100%;</code></td>
+            </tr>
+            <tr>
+              <td><code>min-h-screen</code></td>
+              <td><code>min-height: 100vh;</code></td>
+            </tr>
+            <tr>
+              <td><code>max-h-screen</code></td>
+              <td><code>max-height: 100vh;</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="section">
+        <h2 class="title is-2">Overflow</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Class Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>overflow-scroll</code></td>
+              <td>Show scrolling bar when content overflows.</td>
+            </tr>
+            <tr>
+              <td><code>overflow-x-hidden</code></td>
+              <td>Do not show a scrolling bar when the content overflows on the x-axis.</td>
+            </tr>
+            <tr>
+              <td><code>overflow-y-hidden</code></td>
+              <td>Do not show a scrolling bar when the content overflows on the y-axis.</td>
+            </tr>
+            <tr>
+              <td><code>mask-overflow</code></td>
+              <td>Hide content which overflows the bounds.</td>
+            </tr>
+            <tr>
+              <td><code>inset-round</code> (as a modifier to <code>mask-overflow</code>)</td>
+              <td>Make the bounds round. You can control the radius size with <code>$mask-inset-radius</code>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="section">
+        <h2 class="title is-2">Glass Effect</h2>
+        <p class="block">Use <code>is-glass</code> as a modifier to the <code>box</code> class to give the background a glass effect.</p>
+      </section>
+      <section class="section">
+        <h2 class="title is-2">Cursors</h2>
+        <p class="block">Hover the tags to see the cursors in effect.</p>
+        <span class="tag is-primary pointer">pointer</span>
+        <span class="tag is-primary pointer">pointer</span>
+        <span class="tag is-primary pointer">pointer</span>
+        <span class="tag is-primary pointer">pointer</span>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
