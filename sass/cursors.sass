@@ -1,0 +1,5 @@
+$cursors: (default, pointer, none, crosshair, alias, all-scroll, cell, col-resize, row-resize, copy, help, progress, context-menu, wait, text, move, no-drop, not-allowed, grab, grabbing, n-resize, s-reize, e-resize, w-resize, ns-resize, ew-resize, ne-resize, nw-resize, se-resize, sw-resize, nesw-resize, nwse-resize, zoom-in, zoom-out)
+
+@each $cursor in $cursors
+  .cursor-#{$cursor}
+    cursor: #{$cursor} !important
