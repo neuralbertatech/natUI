@@ -40,7 +40,7 @@ jobs:
           cmd: build-docs
       - name: Restructure static files
         run: |
-          sed -i -e "s/..\/css/css/" docs/*.html
+          sed -i -e "s/..\/css/css/" -e "s/\/img/img/" docs/*.html
           mkdir docs/img
           mv img/natLogo.svg docs/img/natLogo.svg
       - name: Setup Pages
