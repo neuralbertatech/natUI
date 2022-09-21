@@ -37,7 +37,7 @@ jobs:
       - name: yarn build-docs
         uses: Borales/actions-yarn@v3
         with:
-          cmd: install
+          cmd: build-docs
       - run: sed -i -e "s/..\/css/css/" docs/*.html
       - name: Setup Pages
         uses: actions/configure-pages@v2
