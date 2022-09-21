@@ -38,7 +38,10 @@ jobs:
         uses: Borales/actions-yarn@v3
         with:
           cmd: build-docs
-      - run: sed -i -e "s/..\/css/css/" docs/*.html
+      - name: Restructure static files
+        run: |
+          sed -i -e "s/..\/css/css/" docs/*.html
+          mv img/natLogo.svg docs/img/natLogo.svg
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
