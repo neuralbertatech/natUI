@@ -20,7 +20,8 @@
   ],
   "repository": "github:neuralbertatech/natUI",
   "scripts": {
-    "dev": "sass -w sass/main.sass/ css/main.css"
+    "dev": "sass -w sass/main.sass css/main.css",
+    "build-docs": "sass sass/main.sass docs/css/main.css"
   },
   "devDependencies": {
     "bulma": "^0.9.4",
