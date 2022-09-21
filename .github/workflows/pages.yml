@@ -30,6 +30,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Sass Build
+        uses: gha-utilities/sass-build@v0.4.9
+        with:
+          source: sass/main.sass
+          destination: docs/css/main.css
+      - run: sed -i -e "s/..\/css/css/" docs/*.html
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
