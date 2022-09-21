@@ -41,6 +41,7 @@ jobs:
       - name: Restructure static files
         run: |
           sed -i -e "s/..\/css/css/" docs/*.html
+          mkdir docs/img
           mv img/natLogo.svg docs/img/natLogo.svg
       - name: Setup Pages
         uses: actions/configure-pages@v2
