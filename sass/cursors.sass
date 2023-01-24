@@ -1,3 +1,18 @@
+// This Sass code defines a variable called $cursors that contains a list of all
+// the different values that can be used for the cursor property in CSS. The
+// variable is defined as a list of strings, with each string representing a
+// different cursor value.
+// The next line of code uses the @each directive to iterate through each value
+// in the $cursors list. For each value, the code creates a new CSS class with
+// the name cursor- followed by the current cursor value.
+// The body of the @each loop sets the cursor property of the newly created
+// class to the current cursor value, with the !important flag to ensure that
+// the cursor value takes precedence over any other CSS that may be applied to
+// the same element.
+// This code would be useful for providing a set of pre-defined cursor styles
+// that can be easily applied to any element on a website by adding the
+// corresponding class to the HTML.
+
 $cursors: (default, pointer, none, crosshair, alias, all-scroll, cell, col-resize, row-resize, copy, help, progress, context-menu, wait, text, move, no-drop, not-allowed, grab, grabbing, n-resize, s-reize, e-resize, w-resize, ns-resize, ew-resize, ne-resize, nw-resize, se-resize, sw-resize, nesw-resize, nwse-resize, zoom-in, zoom-out)
 
 @each $cursor in $cursors
