@@ -1,6 +1,6 @@
 {
   "name": "@neuralbertatech/ui",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "NeurAlbertaTech's scss framework built on top of bulma.",
   "keywords": [
     "css",
